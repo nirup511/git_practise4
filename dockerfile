@@ -2,4 +2,4 @@
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 COPY target/myapp.jar myapp.jar
-ENTRYPOINT ["java", "-jar", "myapp.jar"]
+ENTRYPOINT ["java", "-war", "webappExample.war"]
